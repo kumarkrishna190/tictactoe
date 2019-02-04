@@ -1,0 +1,111 @@
+body {
+    background: linear-gradient(to right, black, grey, red);
+}
+
+.winner{ 
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 2px 2px black;
+    background-color: grey;
+    text-transform: uppercase;
+    animation: grow 5s infinite;
+}
+
+.xo1, .xo2, .xo3, .xo4, .xo5, .xo6, .xo7, .xo8, .xo9 {
+    margin: 0,0;
+    border: 0,0;
+    font-size: 6.5em;
+    font-family: 'Lato';
+    font-style: normal;
+    text-shadow: 2px 2px darkgrey;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+.block1, .block2, .block3, .block4, .block5, .block6, .block7, .block8, .block9 {
+    display:inline-block;
+    box-shadow: 1px 1px darkgrey;
+    width: auto;
+    height: auto;
+    max-height: 300px;
+    max-width: 300px;
+    min-height: 100px;
+    min-width: 100px;
+    background-color: rgba(20,20,20,0.9);
+}
+.block1 {top:20%; left:10%}
+.block2 {top: 20%; left: 50%}
+.block3 {top: 100px; left: 520px}
+.block4 {top: 305px; left: 110px}
+.block5 {top: 305px; left: 315px}
+.block6 {top: 305px; left: 520px}
+.block7 {top: 510px; left: 110px}
+.block8 {top: 510px; left: 315px}
+.block9 {top: 510px; left: 520px}
+
+.block1:hover, .block2:hover, .block3:hover, .block4:hover, .block5:hover, .block6:hover, .block7:hover, .block8:hover, .block9:hover {
+    background: black;
+}
+
+.player1 {
+    display: inline-block;
+    width: auto;
+    top: auto;
+    height: auto;
+    padding: 2px;
+    min-width: 100px;
+    max-width: 250px;
+    font-size: 20px;
+    font-family: 'Lato';
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-size: contain;
+    background-color: red; 
+}
+
+.player2 {
+    display:inline-block;
+    width: auto;
+    top: auto;
+    height: auto;
+    padding: 2px;
+    min-width: 100px;
+    max-width: 250px;
+    font-size: 20px;
+    font-family: 'Lato';
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-size: contain;
+    background-color: black; 
+}
+.new {
+    width: auto;
+    top: auto;
+    height: auto;
+    padding-top: 1px;
+    font-size: 20px;
+    font-family: 'Lato';
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-size: contain;
+    background-color: rgba(0,0,0,0.5);
+    transition: all 0.3s;
+}
+@keyframes grow {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
+
+
+.new:hover {
+    background: red;
+    transform: scale(1.1);
+    animation: grow 1s infinite;
+}
+
